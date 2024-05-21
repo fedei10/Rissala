@@ -1,0 +1,87 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+
+.h11 {
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 12px 0px 0px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+  color: rgb(15, 23, 42);
+  font-family: "Poppins", sans-serif; /*"Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;*/
+
+}
+#right-side-container {
+  margin-top: -200px; /* Adjust the value as needed */
+}
+.buttonmezyen {
+  padding: 10px 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #5e8cff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px #000;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-family: poppins;
+  cursor: pointer;
+  transition-duration: .2s;
+  padding-left: 8px;
+  transition-duration: .5s;
+  letter-spacing: 2.5px;
+  margin: 5px;
+}
+.buttonmezyen:hover {
+  background-color: #e9eaff;
+  color:#000;
+  transition-duration: .5s;
+}
+
+.buttonmezyen:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+a {
+  text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover as well */
+}
+.line {
+  width: 900px;
+  height: 5px;
+  background-color:#000000; /* Adjust line color as needed */
+  animation: lineDrawToLeft 5s ease-in-out infinite;
+}
+
+.liner{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+@keyframes lineDrawToLeft {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(1); /* Scale the line to full width */
+  }
+  100%{
+    transform: scaleY(0); }}
+
+/* .our-team{
+  
+} */
+

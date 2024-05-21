@@ -1,0 +1,26 @@
+<div class="form-control-container">
+  <form [formGroup]="createForm" (ngSubmit)="createPost()">
+    <div>
+      
+      <input type="text" id="title" placeholder="Title" class="input" formControlName="title">
+    </div>
+    <div>
+      <input type="text" placeholder="Post Image" class="input" id="post_img" formControlName="post_img">
+    </div>
+    <div>
+  
+      <app-editor (htmlOutput)="onHtmlChange($event)"></app-editor>
+      <input type="text"  id="content" formControlName="content" value="{{htmlContent}} ">
+  
+    </div>
+    <div>
+  
+      <input type="text" placeholder="Style" class="input" id="style" formControlName="style">
+    </div>
+    <div>
+  
+      <input type="text" placeholder="Category" class="input" id="category" formControlName="category">
+    </div>
+    <button type="submit" class="button-confirm" [disabled]="!createForm.valid">next</button>
+  </form>
+  </div>

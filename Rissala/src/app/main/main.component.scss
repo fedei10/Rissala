@@ -1,0 +1,162 @@
+/* search bar*/
+.InputContainer {
+  width: 210px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+.marg{
+  margin-left: 300px;
+}
+.custom-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.5rem; /* Adjusted padding */
+  margin: 0 0.5rem; /* Added margin to create space */
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: white; /* Default white background */
+  color: black; /* Changed text color to green */
+  transition: background-color 0.4s; /* Added transition for background color */
+}
+
+.custom-button span {
+  position: relative;
+  z-index: 10;
+}
+
+.custom-button:hover {
+  background-color: #f3b184; /* Change background color to green on hover */
+}
+
+.custom-button:hover span {
+  color: black; /* Change text color to black on hover */
+}
+.input-container {
+  width: 420px;
+  position: relative;
+  border-radius: 10px;
+  border: 2.5px solid black;
+  background-color: #baffcf;
+  box-shadow: 0px 2px 0px #000;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+  margin-left: 40px;
+  width: 376px;
+  height: 40px;
+  padding: 10px;
+  transition: .2s linear;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: #dcfde9;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.input:focus {
+  outline: none;
+  
+}
+.input-container:hover{
+  border: 2px solid #000000;
+  box-shadow: 0px 5px 0px #000000;;
+}
+
+
+.input-container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Poppins;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #dcfde9;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 0 0.5rem;
+}
+
+.comic-button:hover {
+  background-color: #baffcf;
+  color: #000000;
+  border: 2px solid #000000;
+  box-shadow: 0px 5px 0px #000000;
+}
+
+.comic-button:active {
+  background-color: #baffcf;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.marg{
+  margin-left: 40px;
+}
+.finder{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 3vh;
+}
+a {
+  text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+  text-decoration: none; /* Remove underline on hover as well */
+}

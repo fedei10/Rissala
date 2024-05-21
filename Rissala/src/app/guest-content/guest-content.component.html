@@ -1,0 +1,68 @@
+<app-guest-header ></app-guest-header>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    
+
+<div class="container-fluid">
+   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+   <div class="marg">
+    <h1 style="font-family: Poppins; text-align:center ;font-size: 70px; margin: 30px; color: #000000;"> Discover your next read</h1>
+    <h1 style="font-family: Poppins; font-size: 20px; margin: 35px; text-align: center; color:#666666;">Find Your Perfect Newsletter Match.</h1>
+   </div>
+
+   <div class="marg2">
+
+         <div class="input-container">
+         <span class="icon">
+            <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+         </span>
+         <input type="text" name="search" class="input" formControlName="search" placeholder="SEARCH...">
+         <button type="submit">  
+            <span class="icon"> 
+               <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </span>
+         </button>
+      </div>
+   </div>
+
+
+    <div class="marg3">
+      <div class="marg4">
+      <button class="button">
+      <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+         Explore topics
+      </button>         
+      <button class="catbutton"> Technology
+      </button>
+      <button class="catbutton"> Media
+      </button>
+      <button class="catbutton"> Art
+   </button>
+   <button class="catbutton"> Gaming
+   </button>
+   <button class="catbutton"> Culture
+      </button>
+      <button class="catbutton"> Religion
+      </button>
+      <button class="catbutton"> Spirituality
+      </button>
+      <button class="catbutton"> Sports
+      </button>
+   </div>
+</div>
+
+    <hr>
+   <div class="marg3">
+      <div class="marg4">
+      <h1 style="color: rgb(138, 138, 138);">{{ResultsFor}} </h1> <h1>{{searching}}</h1>
+      </div>
+   </div>
+
+      <div class=""></div>
+   </form>
+      <app-profil-posts [createur]="createur" [rissala]="rissala"></app-profil-posts>
+   
+
+</div>
+
+

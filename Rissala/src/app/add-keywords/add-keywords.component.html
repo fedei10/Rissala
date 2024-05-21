@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="form-control-container">
+        <input type="text" formControlName="name" placeholder="Name" class="form-control">
+      </div>
+          <button type="submit">addkeyword</button>
+    <div *ngIf="lista && lista.length > 0">
+        <div *ngFor="let l of lista" class="tag" >
+        <span class='inline-span' >{{ l }}</span>
+        <span class="tagg"  (click)="logSpanContent(l)" >x</span>
+        </div>
+    </div>
+    <div>
+        <div *ngIf="!lista || lista.length === 0">
+            <!-- Render a message or placeholder when the list is null or empty -->
+            <span class="tagg">No items to display.</span>
+          </div>
+    </div>
+
+
+</form>
+<a routerLink="/sidebar/" >
+    <button>create</button>
+</a>

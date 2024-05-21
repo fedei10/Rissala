@@ -1,0 +1,122 @@
+.footer {
+    display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    --background: #e3f5ea;
+    --font-color: #323232;
+    --main-color: #323232;
+    padding: 20px;
+    background: var(--background);
+    border-top: 2px solid var(--main-color);
+    color: var(--font-color);
+    
+
+}
+
+.footer h3 {
+margin-top: 10px;
+font-family: Poppins;
+text-align: center;
+font-weight:bold;
+font-size:14px;
+}
+.footer h2 {
+margin-bottom: 10px;
+font-family: Poppins;
+text-align: center;
+font-size:12px;
+}
+
+.footer hr {
+margin-top: 5px;
+}
+
+
+
+.subscribe-form {
+
+margin-top: 0px;
+--main-focus: #8be2a5;
+--font-color: #323232;
+--font-color-sub: #666;
+--bg-color: #fff;
+--main-color: #323232;
+font-family: Poppins;
+display: flex;
+width: 500px;
+height: 45px;
+border-radius: 5px;
+box-shadow: 4px 4px var(--main-color);
+
+}
+
+.subscribe-input {
+text-align: center;
+width: 100%;
+height: 100%;
+padding: 5px 10px;
+border: 2px solid var(--main-color);
+border-right: 0;
+border-radius: 5px 0 0 5px;
+font-size: 18px;
+font-weight: 500;
+color: var(--font-color);
+background: var(--bg-color);
+}
+
+.subscribe-btn {
+width: 50%;
+height: 100%;
+border: 2px solid var(--main-color);
+border-radius: 0 5px 5px 0;
+background-color: var(--main-focus);
+font-size: 16px;
+font-weight: 600;
+margin-bottom: 50;
+cursor: pointer;
+transition: all 250ms;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+.subscribe-input:focus {
+outline: none;
+border: 2px solid;
+border-right: 0;
+}
+
+.subscribe-btn::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 0;
+background-color: #212121;
+z-index: -1;
+-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+transition: all 250ms;
+}
+
+.subscribe-btn:hover {
+color: #8be2a5;
+}
+
+.subscribe-btn:hover::before {
+width: 100%;
+}
+
+
+
+.footer .copyright {
+text-align: center;
+margin-top:15px;
+font-size:13px;
+opacity:0.6;
+}

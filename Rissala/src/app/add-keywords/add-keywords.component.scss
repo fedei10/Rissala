@@ -1,0 +1,98 @@
+/* Container for the form control */
+.form-control-container {
+  margin-bottom: 20px; /* Add margin to separate form controls */
+}
+
+/* Form control styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover effect */
+.form-control:hover {
+  border-color: #999;
+}
+
+/* Focus effect */
+.form-control:focus {
+  outline: none;
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add box shadow on focus */
+}
+
+/* Placeholder text color */
+.form-control::placeholder {
+  color: #999;
+}
+
+/* Disabled state */
+.form-control:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+
+.tag {
+    display: inline-block;
+    background: #cccccc;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #000000;
+    padding: 2px 10px;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 0px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .tag:hover {
+    color: black; /* Change text color to white on hover */
+    background-color: #bfbfbf; /* Change background color to black on hover */
+  }
+  .tag {
+    display: inline-block; /* Ensure the tags are displayed inline */
+    margin-right: 5px; /* Optional: Add margin between tags */
+    background-color: #f0f0f0; /* Optional: Background color for the tags */
+    padding: 5px; /* Optional: Add padding to the tags */
+}
+
+.tag-text {
+    margin-right: 5px; /* Optional: Add space between text and delete button */
+}
+
+.tag {
+  font-size: larger;
+  display: inline-block; /* Ensure the tags are displayed inline */
+  margin-right: 5px; /* Optional: Add margin between tags */
+  background-color: #f0f0f0; /* Optional: Background color for the tags */
+  padding: 5px; /* Optional: Add padding to the tags */
+}
+
+.tag-text {
+  margin-right: 5px; /* Optional: Add space between text and delete button */
+}
+
+.tag-delete {
+  cursor: pointer; /* Change cursor to pointer on hover for delete button */
+  color: grey; /* Optional: Customize delete button color */
+}
+.tagg{
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 3px;
+
+
+}
+.tagg:hover{
+
+  background-color: #666666;
+}

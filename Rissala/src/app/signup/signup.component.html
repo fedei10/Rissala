@@ -1,0 +1,37 @@
+<div class="flex flex-row items-center justify-center h-screen">
+  <div class="w-1/2">
+    <form class="form" [formGroup]="user" (ngSubmit)="createuser()">
+      
+      <img src="/assets/logo.svg" class="h-12 w-auto" alt="Logo"><div class="title">sign up</div>
+      <input class="input" name="username" placeholder="Username"  type="text" formControlName="username" >
+      <div *ngIf="user.get('username')?.invalid &&user.get('username')?.touched &&user.get('username')?.errors?.['pattern']">
+        <small>
+          Username Invalid (letters and number only)
+        </small>
+      </div>
+      <input class="input" name="email" placeholder="Email" formControlName="email" type="email">
+      <small *ngIf="user.get('email')?.invalid &&user.get('email')?.touched &&user.get('email')?.errors?.['email']">Email invalid</small>
+      <input class="input" name="password" placeholder="Password" formControlName="password" type="password">
+      <div *ngIf="user.get('password')?.invalid && user.get('password')?.touched ">
+        <small *ngIf="user.get('password')?.errors?.['minlength']?.['requiredLength']">
+            *Please enter at least 6 caracters
+        </small>
+        <small *ngIf="user.get('password')?.errors?.['pattern']" >
+            *Please enter only letters and numbers
+        </small>
+      </div>
+      <input class="input" name="user_img" placeholder="place image link here" formControlName="user_img" type="text">
+
+      
+      <button type="submit" class="button-confirm">Sign Up</button>
+      <div class="text-gray-900 mt-4 text-center">
+        <span>Already have an account? <a routerLink="/login" class="text-sm text-green-600">Login</a></span>
+      </div>
+    </form>
+  </div>
+  <div class="w-1/2">
+    <div class="image-container">
+      <img src="/assets/signupan.svg" class="image" alt="Logo">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container-fluid" >
+    <div class="card" *ngFor="let r of rissala" >
+      <div class="card-header" [routerLink]="['/Rissala/', r.id]" routerLinkActive="router-link-active">
+        <img [src]="r.post_img" />
+      </div>
+      <div class="card-body">
+        <span *ngFor="let tag of r.keywords.slice(-4)" class="tag tag-teal" [routerLink]="['/search/', tag]" routerLinkActive="router-link-active">{{ tag }}</span>
+  
+        <a [routerLink]="['/Rissala/', r.id]" routerLinkActive="router-link-active" class="no-link-style">
+        <h4>
+          {{ r.title }}
+        </h4>
+        </a>
+        <div class="user">
+
+        
+          <img [src]="createur.user_img" alt="user" />
+    
+          <div class="user-info">
+            <a  [routerLink]="['/createur/', createur.user_id]" routerLinkActive="router-link-active" class="no-link-style">
+                <h5>{{createur.username}}</h5>
+            </a>
+            <small>2h ago</small>
+          </div>
+        </div>
+      </div>
+    </div>    
+  
+  

@@ -1,0 +1,16 @@
+<div class="footer">
+    <footer>
+
+            <h3>Subscribe to get Rissalas from {{createur.username}}</h3>
+            <h2>delivered directly to your inbox.</h2>
+            <div class="subscribe-form">
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()" >
+                    <input type="email" class="form-control" placeholder="EXAMPLE@GMAIL.COM" required name="mail" formControlName="mail">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+        <hr>
+    </footer>
+    
+</div>

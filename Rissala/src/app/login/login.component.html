@@ -1,0 +1,33 @@
+<div class="flex flex-row items-center justify-center h-screen">
+  <div class="w-1/2">
+    <form class="form">
+      <a routerLink="">
+      <img src="/assets/logo.svg"  class="h-12 w-auto" alt="Logo"></a>
+      <div class="title">Login</div>
+  
+      <input class="input" name="email" placeholder="Email" type="email">
+      <div class="password-container">
+        <input class="input" name="password" placeholder="Password" type="password"></div>
+        <div class="checkbox-container">
+            <label class="container">
+                <input checked="checked" type="checkbox">
+                <div class="checkmark"></div> <span class="remember-me">Remember me</span> <span><a routerLink="/forgot" class="text-pixel-14 text-green-600 hover:underline mb-0.5">Forgot password?</a></span> 
+            </label>
+            
+        </div>
+      
+      <button type="submit" class="button-confirm">Login</button>
+      <div class="text-gray-900 mt-4 text-center">
+        <span>Don't have an account? <a routerLink="/signup" class="text-sm text-green-600">Sign up</a></span>
+      </div>
+      
+    </form>
+  </div>
+  <div class="w-1/2">
+    <div class="image-container">
+      <img src="/assets/login.svg" class="image" alt="Logo">
+    </div>
+  </div>
+
+</div>
+

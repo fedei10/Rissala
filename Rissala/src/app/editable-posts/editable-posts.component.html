@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="card" *ngFor="let r of  rissala">
+      <a [routerLink]="['/Rissala/', r.id]" routerLinkActive="router-link-active" class="no-link-style">
+        <div class="card-header">
+          <img [src]="r.post_img" />
+        </div>
+      </a>
+      <div class="card-body">
+        <span *ngFor="let tag of r.keywords.slice(-4)" class="tag tag-teal">{{ tag }}</span>
+        
+        <a [routerLink]="['/Rissala/', r.id]" routerLinkActive="router-link-active" class="no-link-style">
+        
+        <h4>
+          {{ r.title }}
+        </h4>
+        </a>
+        <div class="user">
+                 <button class="action-btn edit-btn" (click)="onEditPost(r)">Edit</button>
+       <button class="action-btn delete-btn" (click)="onDeletePost(r.id)">Delete</button>
+<!--  -->        </div>
+      </div>
+    </div>    
+  
+  
